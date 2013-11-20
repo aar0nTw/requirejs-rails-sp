@@ -165,6 +165,18 @@ class RequirejsHelperTest < ActionView::TestCase
     end
   end
 
+  test "requirejs_include_tag with digested asset still need user_config path" do
+    begin
+      saved_digest = Rails.application.config.assets.digest
+      Rails.application.config.assets.digest = true
+      Rails.application.config.requirejs.user_config = {'paths' => { 'jquery' => 'lib/jquery.min' } }
+      render :text => wrap(requirejs_include_tag)
+      assert_select "script:first-of-type", :text => %r[var require =.*"paths":.*"jquery":"lib/jquery.min"]
+    ensure
+      Rails.application.config.assets.digest = saved_digest
+    end
+  end
+
   test "requirejs_include_tag with CDN asset in paths" do
     with_cdn
     render :text => wrap(requirejs_include_tag)
