@@ -1,6 +1,13 @@
 <!--
 Marked Style: GitHub
 -->
+# v0.9.1.sp1
+
+- Faria special version
+- Upgrade requirejs and r.js to 2.1.9+
+- Add option in build config whitelist
+- Add a workaround patch to fixed the path no load currently when no set modules and have digest setting.
+
 # v0.9.1
 
 - Updated to to require.js \ r.js 2.1.2, and almond 0.2.3
