@@ -50,8 +50,7 @@ module RequirejsHelper
 
           if run_config.has_key? 'paths'
             # Add paths for assets specified by full URL (on a CDN)
-            # PATCH: still add all path on requirejs.yml
-            run_config['paths'].each { |k,v| paths[k] = v } # if v =~ /^https?:/ }
+            run_config['paths'].each { |k,v| paths[k] = v if v =~ /^https?:/ }
           end
 
           # Override user paths, whose mappings are only relevant in dev mode
