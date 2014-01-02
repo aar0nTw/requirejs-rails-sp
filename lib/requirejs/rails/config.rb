@@ -83,6 +83,7 @@ module Requirejs::Rails
         skipDirOptimize
         skipModuleInsertion
         skipPragmas
+        keepBuildDir
         uglify
         uglify2
         useStrict
