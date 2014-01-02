@@ -3,7 +3,7 @@ Marked Style: GitHub
 -->
 # RequireJS for Rails
 
-Integrates [RequireJS](http://requirejs.org/) into the <del>Rails3</del> Rails 4 Asset Pipeline.
+Integrates [RequireJS](http://requirejs.org/) into the <del>Rails 3</del> Rails 4 Asset Pipeline.
 
 **UPGRADE NOTES:** Users upgrading within the 0.x series should read the Changes section for relevant usage changes.  We're pushing hard to 1.0, when the configuration and setup details will be declared stable.  Until that time expect some bumps as things bake out.
 
