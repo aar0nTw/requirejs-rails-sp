@@ -2,9 +2,8 @@
 Marked Style: GitHub
 -->
 # RequireJS for Rails
-## Faria Systems sp version
 
-Integrates [RequireJS](http://requirejs.org/) into the Rails 3 Asset Pipeline.
+Integrates [RequireJS](http://requirejs.org/) into the <del>Rails3</del> Rails 4 Asset Pipeline.
 
 **UPGRADE NOTES:** Users upgrading within the 0.x series should read the Changes section for relevant usage changes.  We're pushing hard to 1.0, when the configuration and setup details will be declared stable.  Until that time expect some bumps as things bake out.
 
@@ -13,7 +12,7 @@ Integrates [RequireJS](http://requirejs.org/) into the Rails 3 Asset Pipeline.
 1.  Add this to your Rails app's `Gemfile`:
 
     ```
-    gem 'requirejs-rails'
+    gem 'requirejs-rails', github: "aar0nTw/requirejs-rails", branch: "master"
     ```
 
 2.  Remove all Sprockets directives such as `//= require jquery` from `application.js` and elsewhere.  Instead establish JavaScript dependencies using AMD-style `define()` and `require()` calls.
