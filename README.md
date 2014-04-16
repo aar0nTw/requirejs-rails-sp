@@ -2,8 +2,9 @@
 Marked Style: GitHub
 -->
 # RequireJS for Rails
-> Origin source was mirror of  [jwhitley/requirejs-rails](https://github.com/jwhitley/requirejs-rails)
-> And patched for Rails 4
+> Origin source is [jwhitley/requirejs-rails](https://github.com/jwhitley/requirejs-rails),
+>
+> This is a version patched for Rails 4 and updated outdate requirejs lib.
 
 Integrates [RequireJS](http://requirejs.org/) into the <del>Rails 3</del> Rails 4 Asset Pipeline.
 
